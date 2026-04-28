@@ -33,3 +33,8 @@ java -jar target/*.jar
 ----
 
 NOTE: You can read more about how it works https://github.com/odrotbohm/spring-restbucks[here].
+
+== Comparison of the Modulithic and Microservice Architecture 
+Do a deep dive via a comparison of the Modulithic and Microservice Architecture approach under certain aspects:
+https://gist.github.com/odrotbohm/b9d77bf02f0072b7142e6ad3b9bd63f7
+
