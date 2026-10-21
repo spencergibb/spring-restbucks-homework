@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm" version="3.2">
+
+	<!-- Spring Modulith 2.1 no longer declares a column length for the serialized event, which defaults to 255 -->
+	<mapped-superclass class="org.springframework.modulith.events.jpa.JpaEventPublication" access="FIELD">
+		<attributes>
+			<basic name="serializedEvent">
+				<column length="4000" nullable="false" />
+			</basic>
+		</attributes>
+	</mapped-superclass>
+
+</entity-mappings>

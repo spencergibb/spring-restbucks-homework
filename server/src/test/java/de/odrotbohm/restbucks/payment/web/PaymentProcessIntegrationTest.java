@@ -41,7 +41,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.mock.web.MockHttpServletResponse;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.json.JsonMapper;
 import com.jayway.jsonpath.JsonPath;
 
 /**
@@ -176,7 +176,7 @@ class PaymentProcessIntegrationTest extends AbstractWebIntegrationTest {
 
 		var response = mvc.perform(post(ordersLink.expand().getHref()) //
 				.contentType(MediaType.APPLICATION_JSON)
-				.content(new ObjectMapper().writeValueAsString(payload)));
+				.content(new JsonMapper().writeValueAsString(payload)));
 
 		assertThat(response)
 				.hasStatus(HttpStatus.CREATED)

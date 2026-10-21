@@ -14,7 +14,7 @@ This dashboard service:
 
 == Prerequisites
 
-* Java 17 or higher
+* Java 25 or higher
 * Maven 3.6+ (or use the included Maven wrapper)
 * RabbitMQ server running (for message processing)
 
@@ -137,8 +137,8 @@ Override settings in `application.properties` or via environment variables as ne
 
 Key dependencies include:
 
-* Spring Boot 3.5.4
+* Spring Boot 4.1.1
 * Spring AMQP (RabbitMQ integration)
 * Spring Web (REST endpoints)
 * JavaMoney Moneta (currency handling)
-* Jackson (JSON processing)
+* Jackson 3 (JSON processing)
