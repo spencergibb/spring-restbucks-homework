@@ -12,16 +12,15 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>4.0.0-M1</version>
+		<version>4.1.1</version>
 	</parent>
 
 	<properties>
-		<bytebuddy.version>1.17.6</bytebuddy.version>
-		<datasource-micrometer.version>1.1.0</datasource-micrometer.version>
-		<java.version>21</java.version>
-		<jmolecules.version>2025.0.0-RC4</jmolecules.version>
-		<spring-hateoas.version>3.0.0-SNAPSHOT</spring-hateoas.version>
-		<spring-modulith.version>2.0.0-M1</spring-modulith.version>
+		<bytebuddy.version>1.18.15</bytebuddy.version>
+		<datasource-micrometer.version>2.3.0</datasource-micrometer.version>
+		<java.version>25</java.version>
+		<jmolecules.version>2025.0.2</jmolecules.version>
+		<spring-modulith.version>2.1.1</spring-modulith.version>
 		
 		<!-- Enable full annotation processing on Java 23+ -->
 		<maven.compiler.proc>full</maven.compiler.proc>
@@ -68,7 +67,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 
 		<dependency>
 			<groupId>org.jmolecules.integrations</groupId>
-			<artifactId>jmolecules-jackson</artifactId>
+			<artifactId>jmolecules-jackson3</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 
@@ -143,18 +142,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 			<version>0.2.0</version>
 		</dependency>
 
-		<!-- JDK 8 DateTime support for Jackson -->
-
-		<dependency>
-			<groupId>com.fasterxml.jackson.datatype</groupId>
-			<artifactId>jackson-datatype-jsr310</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>com.fasterxml.jackson.module</groupId>
-			<artifactId>jackson-module-parameter-names</artifactId>
-		</dependency>
-
 		<!-- Database -->
 
 		<dependency>
@@ -168,7 +155,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 		<dependency>
 			<groupId>org.javamoney.moneta</groupId>
 			<artifactId>moneta-core</artifactId>
-			<version>1.4.4</version>
+			<version>1.4.5</version>
 		</dependency>
 
 		<dependency>
@@ -189,7 +176,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 
 		<dependency>
 			<groupId>org.testcontainers</groupId>
-			<artifactId>postgresql</artifactId>
+			<artifactId>testcontainers-postgresql</artifactId>
 		</dependency>
 
 	</dependencies>
@@ -241,7 +228,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 
 				<dependency>
 					<groupId>org.springframework.modulith</groupId>
-					<artifactId>spring-modulith-observability</artifactId>
+					<artifactId>spring-modulith-observability-core</artifactId>
 				</dependency>
 
 				<dependency>
