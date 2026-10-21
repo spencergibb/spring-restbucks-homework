@@ -30,7 +30,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.i18n.LocaleContextHolder;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.ObjectMapper;
+import tools.jackson.databind.json.JsonMapper;
 
 /**
  * Unit tests for serialization and deserialization of {@link MonetaryAmount} values.
@@ -44,8 +45,7 @@ class MoneySerializationTest {
 	@BeforeEach
 	void setUp() {
 
-		this.mapper = new ObjectMapper();
-		this.mapper.registerModules(JacksonTestUtils.getModules(Map.of()));
+		this.mapper = JsonMapper.builder().addModules(JacksonTestUtils.getModules(Map.of())).build();
 
 		LocaleContextHolder.setLocale(Locale.ROOT);
 	}

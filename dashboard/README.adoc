@@ -4,7 +4,7 @@ This is a sample microservice that captures purchase from restbucks apps and pro
 
 == Requirements:
 
-* Java 17 or Above
+* Java 25 or Above
 
 == Classes:
 
