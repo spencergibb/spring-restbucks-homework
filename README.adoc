@@ -13,7 +13,7 @@ This project implements a distributed coffee shop system with the following comp
 
 The system uses:
 
-* Spring Boot 3.2.0 with Java 17
+* Spring Boot 4.1.1 with Java 25
 * RabbitMQ for messaging between services
 * RESTful APIs for service communication
 * JavaMoney (Moneta) for currency handling
@@ -21,7 +21,7 @@ The system uses:
 
 == Prerequisites
 
-* Java 17 or higher
+* Java 25 or higher
 * Maven 3.6+ (or use the included Maven wrapper)
 * RabbitMQ server (for message processing between services)
 
