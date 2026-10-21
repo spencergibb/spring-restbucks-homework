@@ -6,7 +6,7 @@ This branch adds the `@External` annotation to the `@OrderPaid` record.  Also, a
 
 === Requirements:
 
-* Java 17 or Above
+* Java 25 or Above
 
 === Build:
 
